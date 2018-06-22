@@ -11,6 +11,10 @@ app.use(express.static('public'));
 app.set('view engine', 'ejs');
 app.use('/mail', mailRouter);
 
+app.get("*", (req, res) => {
+  res.redirect("/mail");
+});
+
 app.listen(backendPort, () => {
   console.log(`Backend Started on ${backendPort}`);
 })
