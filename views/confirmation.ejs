@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <title> Node Mails</title>
+    <link rel='stylesheet' href='/assets/bootstrap/bootstrap4.min.css' />
+  </head>
+  <body>
+    <div class="container">
+      <div class='jumbotron'>
+        <h1> <%= title %></h1>
+        <p> Email Info : </p>
+        <p> To: <%= theMail.mailTo %> </p>
+        <p> Subject: <%=theMail.mailSubject %> </p>
+        <p> Message: <%= theMail.mailBody %> </p>
+        <div class='text-center'>
+          <a class='btn btn-success' href='/mail'> Home</a>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
