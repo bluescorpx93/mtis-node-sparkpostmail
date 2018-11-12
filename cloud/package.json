@@ -1,0 +1,22 @@
+{
+  "name": "node_sparkpost_email",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start-app" : "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "morgan": "^1.9.0",
+    "nodemailer": "^4.6.7",
+    "nodemailer-sparkpost-transport": "^2.0.0",
+    "sparkpost": "^2.1.2"
+  }
+}
