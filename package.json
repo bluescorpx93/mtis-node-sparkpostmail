@@ -1,9 +1,10 @@
 {
-  "name": "node_sparkpostEmail",
+  "name": "node_sparkpost_email",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start-app" : "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -11,7 +12,6 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
-    "dotenv": "^6.0.0",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
     "morgan": "^1.9.0",

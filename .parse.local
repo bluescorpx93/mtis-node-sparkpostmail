@@ -1,0 +1,10 @@
+{
+  "applications": {
+    "_default": {
+      "link": "nodeMailer"
+    },
+    "nodeMailer": {
+      "applicationId": "a1vdf2BlG0jkgp8MtAO9qqzn0ASsQ5X6pBmlBCFE"
+    }
+  }
+}

@@ -1,5 +1,6 @@
 var SparkPost = require('sparkpost');
-var sparkpostMailer = new SparkPost(`${process.env.SPARKPOST_APIKEY}`);
+var appKeys = require('../keys/appKeys');
+var sparkpostMailer = new SparkPost(appKeys.SPARKPOST_APIKEY);
 var mailTemplates = require('../templates/demo');
 var nodemailer = require('nodemailer');
 var sparkPostTransport = require('nodemailer-sparkpost-transport')
@@ -65,7 +66,7 @@ exports.sendMailSMTP = (req, res, next) => {
   }
 
   var transporter = nodemailer.createTransport(sparkPostTransport({
-    'sparkPostApiKey': `${process.env.SPARKPOST_APIKEY}`,
+    'sparkPostApiKey': appKeys.SPARKPOST_APIKEY,
     options: {
       sandbox : true
     }
